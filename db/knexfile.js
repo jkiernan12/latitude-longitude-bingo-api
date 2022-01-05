@@ -1,13 +1,15 @@
 // Update with your config settings.
+require('dotenv').config()
 
 module.exports = {
 
   development: {
     client: 'postgresql',
     connection: {
-      database: DB_NAME,
-      user:     DB_USER,
-      password: DB_PASS
+      //GET RID OF THIS
+      database: 'bingo_db',
+      user:     'project_user',
+      password: 'fe2108'
     },
     pool: {
       min: 2,
