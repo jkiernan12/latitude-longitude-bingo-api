@@ -8,8 +8,7 @@ exports.up = function(knex) {
         table.decimal('latitude').notNullable()
         table.decimal('longitude').notNullable()
         table.string('flag_path', 255).notNullable()
-        table.timestamps(true)
-        //^^ timestamps not making it to db
+        table.timestamps(false, true)
       });
   };
   
