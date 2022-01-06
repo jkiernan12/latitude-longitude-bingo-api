@@ -7,9 +7,9 @@ module.exports = {
     connection: {
       //GET RID OF THIS
       host: 'localhost',
-      database: process.env.DB_NAME,
-      user:     process.env.DB_USER,
-      password: process.env.DB_PASS
+      database: "bingo_db",
+      user:     "project_user",
+      password: "fe2108"
     },
     pool: {
       min: 2,
