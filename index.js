@@ -6,7 +6,9 @@ const port = 8080
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./db/knexfile')[environment];
 const database = require('knex')(configuration);
-//initialize knex
+const cors = require('cors')
+
+app.use(cors())
 
 app.get('/api/v1/countries', async (req, res) => {
   try {
