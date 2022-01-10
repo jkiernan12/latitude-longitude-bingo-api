@@ -529,7 +529,7 @@ exports.seed = function(knex) {
     code: "CC",
     latitude: -12.164165,
     longitude: 96.870956,
-    name: "Cocos [Keeling] Islands",
+    name: "Cocos Islands",
     regions: {
       data: [
         "Oceania",
@@ -543,7 +543,7 @@ exports.seed = function(knex) {
     code: "CD",
     latitude: -4.038333,
     longitude: 21.758664,
-    name: "Congo [DRC]",
+    name: "Congo",
     regions: {
       data: [
         "Africa",
@@ -573,7 +573,7 @@ exports.seed = function(knex) {
     code: "CG",
     latitude: -0.228021,
     longitude: 15.827659,
-    name: "Congo [Republic]",
+    name: "Congo",
     regions: {
       data: [
         "Africa",
@@ -997,7 +997,7 @@ exports.seed = function(knex) {
     code: "FK",
     latitude: -51.796253,
     longitude: -59.523613,
-    name: "Falkland Islands [Islas Malvinas]",
+    name: "Falkland Islands",
     regions: {
       data: [
         "Americas",
@@ -2040,7 +2040,7 @@ exports.seed = function(knex) {
     code: "MK",
     latitude: 41.608635,
     longitude: 21.745275,
-    name: "Macedonia [FYROM]",
+    name: "Macedonia",
     regions: {
       data: [
         "Europe",
@@ -2069,7 +2069,7 @@ exports.seed = function(knex) {
     code: "MM",
     latitude: 21.913965,
     longitude: 95.956223,
-    name: "Myanmar [Burma]",
+    name: "Myanmar",
     regions: {
       data: [
         "Asia",
