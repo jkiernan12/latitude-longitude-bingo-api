@@ -2,13 +2,14 @@ require('dotenv').config()
 
 const express = require('express')
 const app = express()
-const port = 8080
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./db/knexfile')[environment];
 const database = require('knex')(configuration);
 const cors = require('cors')
 
 app.use(cors())
+
+app.set('port', process.env.PORT || 8080)
 
 app.get('/api/v1/countries', async (req, res) => {
   try {
@@ -20,5 +21,5 @@ app.get('/api/v1/countries', async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Bingo Express listening at http://localhost:${port}`)
+  console.log(`Bingo Express listening at ${port}`)
 })
