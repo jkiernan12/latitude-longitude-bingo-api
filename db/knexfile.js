@@ -5,7 +5,6 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      //GET RID OF THIS
       host: 'localhost',
       database: process.env.DB_NAME,
       user:     process.env.DB_USER,
@@ -18,5 +17,17 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }
+  },
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL + `?ssl=true`,
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      directory: './db/migrations'
+    },
+    useNullAsDefault: true
   }
 };
