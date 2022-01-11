@@ -543,7 +543,7 @@ exports.seed = function(knex) {
     code: "CD",
     latitude: -4.038333,
     longitude: 21.758664,
-    name: "Congo",
+    name: "Democratic Republic of Congo",
     regions: {
       data: [
         "Africa",
@@ -573,7 +573,7 @@ exports.seed = function(knex) {
     code: "CG",
     latitude: -0.228021,
     longitude: 15.827659,
-    name: "Congo",
+    name: "Republic of the Congo",
     regions: {
       data: [
         "Africa",
