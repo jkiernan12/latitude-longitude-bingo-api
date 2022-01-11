@@ -20,6 +20,6 @@ app.get('/api/v1/countries', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Bingo Express listening at ${port}`)
+app.listen(app.get('port'), () => {
+  console.log(`Bingo Express listening`)
 })
